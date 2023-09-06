@@ -1,38 +1,159 @@
-.App {
+*{
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: wheat;
+}
+header , nav , .about , .contact , .homesec2 {
+  background-color: #5d6d7e;
+  color:  wheat;
+}
+.heading{
   text-align: center;
+  padding: 0.5em ;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-size: 3em;
 }
+.nav ul li a{
+  font-size: 1.5em;
+}
+.nav1{
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.5em;
+  background-color: #FF5733;
+}
+.nav1 ul{
+  display: flex;
+  flex-direction: row;
+  justify-content:center ;
+  flex-wrap: wrap;
+  
+}
+.nav1 ul li{
+  padding: 0.3em 0.6em;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.nav2{
+  text-align: left;
+  font-size: 1.1em;
+  background-color: #FF5733;
+}
+.nav2list{
+  animation: navAnim 2s ease-in-out ;
+}
+@keyframes navAnim {
+  0%{
+    transform: translateY(2vh);
   }
-}
+  100%{
+    transform: translateY(0vh);
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.nav2 ul{
   display: flex;
   flex-direction: column;
+  justify-content:center ;
+  flex-wrap: wrap;
+
+
+}
+.nav2 ul li{
+  padding:  1em 0.3em;
+  width: 100vw;
+}
+
+.fa-icon{
+  position: absolute;
+  right: 3%;
+  margin-top: 2em;
+}
+.btn{
+  color: #ffffff;
+  background-color: #004080;
+  border: none;
+  font-size: large;
+  border-radius: 4em;
+  padding: 0.8em 2em;
+  
+}
+.btn:hover{
+  transform: scale(1.05); /* Increase size slightly on hover */
+  cursor: pointer;
+box-shadow: 2px 3px 2px rgba(55, 49, 49, 0.686);
+background-color: #FF5733 ;
+transition: background-color 1s ease-in-out;
+color: #333333;
+}
+.fa-icon:hover{
+  cursor: pointer;
+  
+}
+.active{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.home{
+  background-image: url(/src/images/athletic-man-woman-with-dumbbells.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  width: 99vw;
+  height: 100vh;
+}
+.home .article{
+ padding: 22vh 5vw;
+}
+.home .h1 , .home .h3{
+  color:#FF5733; 
+  padding: 0.3em; 
+}
+.home .btn{
+margin-top: 0.5em;
+}
+.heading1{
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+  color: greenyellow;
+  font-size: 2em;
+  opacity: 60%;
+  animation: myHeading 3s infinite both ease-in-out;
+}
+@keyframes myHeading {
+  0%{
+    transform: translateX(-10vw);
+  }
+  50%{
+    transform: translateX(20vw);
+  }  
+  100%{
+    transform: translateX(-10vw);
+  }
+}
+.home2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5em 2em;
+  text-align: center;
+}
+.home2 figure{
+  padding: 1em;
+  opacity: 90%;
+}
+.home figure:hover{
+  opacity: 100%;
+  text-shadow:  5px 5px 5px rgb(24, 22, 22);
+}
+.home2 a img{
+  width: 15vw;
+}
+figcaption{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
+  font-size: larger;
 }
